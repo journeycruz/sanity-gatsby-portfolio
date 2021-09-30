@@ -17,7 +17,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Header = ({ pfp }) => (
+const Header = () => (
   <Disclosure as="nav" className="bg-gray-800">
     {({ open }) => (
       <>
@@ -69,15 +69,11 @@ const Header = ({ pfp }) => (
                     </Link>
                   ))}
                   {/* Profile dropdown */}
-                  <Menu as="div" className="ml-3 relative z-50">
+                  <Menu as="div" className="ml-3 relative z-50  my-auto">
                     <div>
-                      <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                      <Menu.Button className="bg-gray-800 flex text-sm rounded-md text-gray-300 hover:bg-gray-700 hover:text-white">
                         <span className="sr-only">Open user menu</span>
-                        <img
-                          className="h-8 w-8 rounded-full"
-                          src="https://live.staticflickr.com/65535/51534432635_edb2b3968f_k.jpg"
-                          alt=""
-                        />
+                        <span className='text-gray-300 font-medium'>Projects</span>
                         <ChevronDownIcon
                           className="text-gray-400 my-auto mx-1 h-3 w-3 hover:text-white"
                           aria-hidden="true"
