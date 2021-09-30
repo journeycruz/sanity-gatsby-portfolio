@@ -6,7 +6,6 @@ import Particles from "react-particles-js";
 
 const SlideList = [
   {
-    textPosition: "text-left",
     category: "from San Antonio, TX."
   }
 ];
@@ -23,36 +22,76 @@ class Hero extends Component {
             params={{
               particles: {
                 number: {
-                  value: 25
-                },
-                size: {
-                  value: 3
-                },
-                color: {
-                  value: "#66bdd1"
+                  value: 8,
+                  density: {
+                    enable: true,
+                    value_area: 800
+                  }
                 },
                 line_linked: {
-                  shadow: {
+                  enable: false
+                },
+                move: {
+                  speed: 4,
+                  out_mode: "out"
+                },
+                shape: {
+                  type: ["image"],
+                  image: [
+                    {
+                      src: "../static/aws-logo.png",
+                      height: 20,
+                      width: 25
+                    },
+                    {
+                      src: "../static/react-logo.png",
+                      height: 20
+                    },
+                    {
+                      src: "../static/npm-logo.png",
+                      height: 20,
+                      width: 30
+                    },
+                    {
+                      src: "../static/bootstraplogo.png",
+                      height: 20,
+                      width: 20
+                    },
+                    {
+                      src: "../static/handlebars-js.png",
+                      height: 20,
+                      width: 30
+                    },
+                    {
+                      src: "../static/heroku-logotype-horizontal-purple.png",
+                      height: 20,
+                      width: 60
+                    },
+                    {
+                      src: "../static/rapidAPIlogo.png",
+                      height: 20,
+                      width: 50
+                    }
+                  ]
+                },
+                size: {
+                  value: 30,
+                  random: false,
+                  anim: {
                     enable: true,
-                    color: "#66bdd1",
-                    blur: 1
+                    speed: 7,
+                    size_min: 10,
+                    sync: false
                   }
                 }
               },
-              interactivity: {
-                events: {
-                  onhover: {
-                    enable: true,
-                    mode: "repulse"
-                  }
-                }
-              }
+              retina_detect: false
             }}
           />
         </div>
 
         {/* Start Single Slide */}
-        {SlideList.map((value, index) => (
+        {SlideList.map(index => (
           <div className="bg-white grid place-items-center m-auto h-full">
             <div
               className="m-auto slide designer-portfolio slider-style-3  d-flex align-items-center justify-content-center rn-slider-height z-50 sm: mx-7"
@@ -61,7 +100,7 @@ class Hero extends Component {
               <div className="container w-full grid place-items-center m-auto">
                 <div>
                   <div>
-                    <div className='text-left pt-24 sm:pt-16 md:pt-8 m-auto'>
+                    <div className="text-left pt-24 sm:pt-16 md:pt-8 m-auto">
                       <h1 className="title text-4xl  uppercase font-black leading-loose">
                         Journey Cruz <br />
                         <TextLoop
@@ -69,11 +108,11 @@ class Hero extends Component {
                           delay="1000"
                           interval={loopIntervals}
                         >
-                          <span className='text-indigo-600'>MongoDB&nbsp;</span>
-                          <span className='text-indigo-600'>Express.js&nbsp;</span>
-                          <span className='text-indigo-600'>React.js&nbsp;</span>
-                          <span className='text-indigo-600'>Node.js&nbsp;</span>
-                          <span className='text-indigo-600'>Full-Stack&nbsp;</span>
+                          <span className="text-indigo-600">MongoDB&nbsp;</span>
+                          <span className="text-indigo-600">Express.js&nbsp;</span>
+                          <span className="text-indigo-600">React.js&nbsp;</span>
+                          <span className="text-indigo-600">Node.js&nbsp;</span>
+                          <span className="text-indigo-600">Full-Stack&nbsp;</span>
                         </TextLoop>
                         Developer
                         <br />
