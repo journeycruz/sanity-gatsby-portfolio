@@ -2,6 +2,7 @@ import React from "react";
 import TextLoop from "react-text-loop";
 import { Component } from "react";
 import Particles from "react-particles-js";
+import { motion } from 'framer-motion';
 
 const SlideList = [
   {
@@ -35,17 +36,17 @@ class Hero extends Component {
                   out_mode: "out"
                 },
                 shape: {
-                  type: ["image"],
+                  type: ["image", "circle"],
                   image: [
                     {
                       src: "https://cdn.cdnlogo.com/logos/r/63/react.svg",
                       height: 20,
-                      width: 20
+                      width: 18,
                     },
                     {
                       src: "https://cdn.cdnlogo.com/logos/v/83/vs-code.svg",
                       height: 20,
-                      width: 20
+                      width: 25,
                     }
                   ]
                 },
@@ -69,6 +70,7 @@ class Hero extends Component {
         </div>
 
         {/* Start Single Slide */}
+        <motion.circle height={100} cx={500} animate={{ cx: [null, 100] }} />
         {SlideList.map(index => (
           <div className="bg-gradient-to-t from-white to-gray-900 grid place-items-center m-auto h-full">
             <div className="m-auto z-50 mx-7" key={index}>
