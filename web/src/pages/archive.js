@@ -19,6 +19,7 @@ export const query = graphql`
       edges {
         node {
           id
+          publishedAt
           mainImage {
             asset {
               _id
@@ -29,6 +30,34 @@ export const query = graphql`
           _rawExcerpt
           slug {
             current
+          }
+          members {
+            _key
+            person {
+              image {
+                crop {
+                  _key
+                  _type
+                  top
+                  bottom
+                  left
+                  right
+                }
+                hotspot {
+                  _key
+                  _type
+                  x
+                  y
+                  height
+                  width
+                }
+                asset {
+                  _id
+                }
+              }
+              name
+            }
+            roles
           }
         }
       }
@@ -51,7 +80,8 @@ const ArchivePage = props => {
     <Layout>
       <SEO title="Archive" />
       <Container>
-        <h1 className={responsiveTitle1}>Projects</h1>
+        <h1 className={responsiveTitle1}>All Projects</h1>
+        <div className="h-px bg-gray-200 mb-10"></div>
         {projectNodes && projectNodes.length > 0 && <ProjectPreviewGrid nodes={projectNodes} />}
       </Container>
     </Layout>
