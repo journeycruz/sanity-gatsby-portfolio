@@ -2,7 +2,6 @@ import React from "react";
 import TextLoop from "react-text-loop";
 import { Component } from "react";
 import Particles from "react-particles-js";
-// import { withRouter } from 'react-router-dom';
 
 const SlideList = [
   {
@@ -15,14 +14,14 @@ const loopIntervals = [1000, 1000, 1000, 1000, 5000];
 class Hero extends Component {
   render() {
     return (
-      <div className="relative w-full h-screen md:max-h-96" id="home">
+      <div className="relative w-full h-screen md:max-h-96">
         <div className="w-full h-screen md:max-h-96 absolute top-0 left-0">
           <Particles
             className="absolute h-screen z-10 md:max-h-96 w-full"
             params={{
               particles: {
                 number: {
-                  value: 8,
+                  value: 15,
                   density: {
                     enable: true,
                     value_area: 800
@@ -32,54 +31,33 @@ class Hero extends Component {
                   enable: false
                 },
                 move: {
-                  speed: 4,
+                  speed: 1,
                   out_mode: "out"
                 },
                 shape: {
-                  type: ["image"],
+                  type: ["image", "circle"],
                   image: [
                     {
-                      src: "../static/aws-logo.png",
+                      src: "https://cdn.cdnlogo.com/logos/r/63/react.svg",
                       height: 20,
                       width: 25
                     },
                     {
-                      src: "../static/react-logo.png",
-                      height: 20
-                    },
-                    {
-                      src: "../static/npm-logo.png",
+                      src: "https://cdn.cdnlogo.com/logos/v/83/vs-code.svg",
                       height: 20,
-                      width: 30
-                    },
-                    {
-                      src: "../static/bootstraplogo.png",
-                      height: 20,
-                      width: 20
-                    },
-                    {
-                      src: "../static/handlebars-js.png",
-                      height: 20,
-                      width: 30
-                    },
-                    {
-                      src: "../static/heroku-logotype-horizontal-purple.png",
-                      height: 20,
-                      width: 60
-                    },
-                    {
-                      src: "../static/rapidAPIlogo.png",
-                      height: 20,
-                      width: 50
+                      width: 25
                     }
                   ]
+                },
+                color: {
+                  value: "#CCC"
                 },
                 size: {
                   value: 30,
                   random: false,
                   anim: {
                     enable: true,
-                    speed: 7,
+                    speed: 4,
                     size_min: 10,
                     sync: false
                   }
@@ -92,7 +70,7 @@ class Hero extends Component {
 
         {/* Start Single Slide */}
         {SlideList.map(index => (
-          <div className="bg-white grid place-items-center m-auto h-full">
+          <div className="bg-gradient-to-t from-white to-gray-900 grid place-items-center m-auto h-full">
             <div
               className="m-auto slide designer-portfolio slider-style-3  d-flex align-items-center justify-content-center rn-slider-height z-50 sm: mx-7"
               key={index}
@@ -100,8 +78,8 @@ class Hero extends Component {
               <div className="container w-full grid place-items-center m-auto">
                 <div>
                   <div>
-                    <div className="text-left pt-24 sm:pt-16 md:pt-8 m-auto">
-                      <h1 className="title text-4xl  uppercase font-black leading-loose">
+                    <div className="text-left m-auto">
+                      <h1 className="title text-4xl text-gray-800 uppercase font-extrabold leading-loose">
                         Journey Cruz <br />
                         <TextLoop
                           springConfig={{ stiffness: 180, damping: 8 }}
