@@ -2,7 +2,7 @@ import React from "react";
 import TextLoop from "react-text-loop";
 import { Component } from "react";
 import Particles from "react-particles-js";
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const SlideList = [
   {
@@ -41,12 +41,12 @@ class Hero extends Component {
                     {
                       src: "https://cdn.cdnlogo.com/logos/r/63/react.svg",
                       height: 20,
-                      width: 18
+                      width: 18,
                     },
                     {
                       src: "https://cdn.cdnlogo.com/logos/v/83/vs-code.svg",
                       height: 20,
-                      width: 25
+                      width: 25,
                     }
                   ]
                 },
@@ -59,8 +59,7 @@ class Hero extends Component {
                   anim: {
                     enable: true,
                     speed: 4,
-                    size_min: 5,
-                    size_max: 10,
+                    size_min: 10,
                     sync: false
                   }
                 }
@@ -71,6 +70,7 @@ class Hero extends Component {
         </div>
 
         {/* Start Single Slide */}
+        <motion.circle height={100} cx={500} animate={{ cx: [null, 100] }} />
         {SlideList.map(index => (
           <div className="bg-gradient-to-t from-white to-gray-900 grid place-items-center m-auto h-full">
             <div className="m-auto z-50 mx-7" key={index}>
@@ -78,7 +78,7 @@ class Hero extends Component {
                 <div>
                   <div>
                     <div className="text-left m-auto">
-                      {/* <h1 className="title text-4xl text-gray-800 uppercase font-bold leading-normal sm:leading-relaxed">
+                      <h1 className="title text-4xl text-gray-800 uppercase font-extrabold leading-loose">
                         Journey Cruz <br />
                         <TextLoop
                           springConfig={{ stiffness: 180, damping: 8 }}
@@ -94,12 +94,8 @@ class Hero extends Component {
                         Developer
                         <br />
                         from San Antonio, TX
-                      </h1> */}
-                      <h1 className="font-extrabold text-4xl leading-normal sm:leading-relaxed">
-                        Combining data driven development
-                        <br /> with elegant, modern <span className='text-indigo-600'>style</span>
                       </h1>
-                      <span id="welcome">Welcome To My Web Development Portfolio</span>
+                      <span id="welcome">Welcome To My Portfolio</span>
                     </div>
                   </div>
                 </div>

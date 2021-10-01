@@ -28,7 +28,6 @@ export const query = graphql`
       edges {
         node {
           id
-          publishedAt
           mainImage {
             crop {
               _key
@@ -55,34 +54,6 @@ export const query = graphql`
           _rawExcerpt
           slug {
             current
-          }
-          members {
-            _key
-            person {
-              image {
-                crop {
-                  _key
-                  _type
-                  top
-                  bottom
-                  left
-                  right
-                }
-                hotspot {
-                  _key
-                  _type
-                  x
-                  y
-                  height
-                  width
-                }
-                asset {
-                  _id
-                }
-              }
-              name
-            }
-            roles
           }
         }
       }

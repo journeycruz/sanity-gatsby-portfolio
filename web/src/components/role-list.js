@@ -13,10 +13,9 @@ function RoleList({ items, title }) {
         {items.map(item => (
           <li key={item._key} className={styles.listItem}>
             <div>
-              <div className='relative w-12 h-12 bg-gray-100 rounded-full overflow-hidden border-solid'>
+              <div className={styles.avatar}>
                 {item.person && item.person.image && item.person.image.asset && (
                   <img
-                  className='w-100 h-100 align-top object-cover'
                     src={imageUrlFor(buildImageObj(item.person.image))
                       .width(100)
                       .height(100)
