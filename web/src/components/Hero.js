@@ -14,10 +14,10 @@ const loopIntervals = [1000, 1000, 1000, 1000, 5000];
 class Hero extends Component {
   render() {
     return (
-      <div className="relative w-full h-screen md:max-h-96">
-        <div className="w-full h-screen md:max-h-96 absolute top-0 left-0">
+      <div className="relative w-full h-screen">
+        <div className="w-full h-screen absolute top-0 left-0">
           <Particles
-            className="absolute h-screen z-10 md:max-h-96 w-full"
+            className="absolute h-screen z-10 w-full"
             params={{
               particles: {
                 number: {
@@ -35,17 +35,17 @@ class Hero extends Component {
                   out_mode: "out"
                 },
                 shape: {
-                  type: ["image", "circle"],
+                  type: ["image"],
                   image: [
                     {
                       src: "https://cdn.cdnlogo.com/logos/r/63/react.svg",
                       height: 20,
-                      width: 25
+                      width: 20
                     },
                     {
                       src: "https://cdn.cdnlogo.com/logos/v/83/vs-code.svg",
                       height: 20,
-                      width: 25
+                      width: 20
                     }
                   ]
                 },
@@ -71,10 +71,7 @@ class Hero extends Component {
         {/* Start Single Slide */}
         {SlideList.map(index => (
           <div className="bg-gradient-to-t from-white to-gray-900 grid place-items-center m-auto h-full">
-            <div
-              className="m-auto slide designer-portfolio slider-style-3  d-flex align-items-center justify-content-center rn-slider-height z-50 sm: mx-7"
-              key={index}
-            >
+            <div className="m-auto z-50 mx-7" key={index}>
               <div className="container w-full grid place-items-center m-auto">
                 <div>
                   <div>
