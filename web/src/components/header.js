@@ -18,7 +18,7 @@ function classNames(...classes) {
 }
 
 const Header = () => (
-  <Disclosure as="nav" className="bg-gray-800">
+  <Disclosure as="nav" className="bg-gray-900">
     {({ open }) => (
       <>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -71,7 +71,7 @@ const Header = () => (
                   {/* Profile dropdown */}
                   <Menu as="div" className="ml-3 relative z-50  my-auto">
                     <div>
-                      <Menu.Button className="bg-gray-800 flex text-sm rounded-md text-gray-300 hover:bg-gray-700 hover:text-white">
+                      <Menu.Button className="bg-gray-900 flex text-sm rounded-md text-gray-300 hover:bg-gray-700 hover:text-white">
                         <span className="sr-only">Open user menu</span>
                         <span className='text-gray-300 font-medium'>Projects</span>
                         <ChevronDownIcon
@@ -138,7 +138,7 @@ const Header = () => (
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                 type="button"
-                className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               >
                 <span className="sr-only">View notifications</span>
               </button>
@@ -146,7 +146,7 @@ const Header = () => (
               {/* Profile dropdown */}
               <Menu as="div" className="ml-3 relative z-50">
                 <div>
-                  <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                  <Menu.Button className="bg-gray-900 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">Open user menu</span>
                     <img
                       className="h-8 w-8 rounded-full"

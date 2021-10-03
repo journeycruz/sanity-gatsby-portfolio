@@ -16,7 +16,7 @@ function ProjectPreviewGrid(props) {
         {props.nodes &&
           props.nodes.map(node => (
             <li
-              className="shadow-lg hover:shadow-2xl hover:bg-gray-100 transition ease-in-out duration-700 rounded-md px-6 py-5"
+              className="shadow-lg hover:shadow-2xl transition ease-in-out duration-700 rounded-md px-6 py-5"
               key={node.id}
             >
               <ProjectPreview {...node} />

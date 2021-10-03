@@ -4,14 +4,6 @@ import { Component } from "react";
 import Particles from "react-particles-js";
 // import { motion } from 'framer-motion';
 
-const SlideList = [
-  {
-    category: "from San Antonio, TX."
-  }
-];
-
-const loopIntervals = [1000, 1000, 1000, 1000, 5000];
-
 class Hero extends Component {
   render() {
     return (
@@ -69,28 +61,29 @@ class Hero extends Component {
             }}
           />
         </div>
-
-        {/* Start Single Slide */}
-        {SlideList.map(index => (
-          <div className="bg-gradient-to-t from-white to-gray-900 grid place-items-center m-auto h-full">
-            <div className="m-auto z-50 mx-7" key={index}>
-              <div className="container w-full grid place-items-center m-auto">
+        <div className="bg-gradient-to-b from-white to-gray-100 grid place-items-start m-auto h-full z-50">
+          <div className="m-auto z-50 mx-7">
+            <div className="container w-full m-auto lg:ml-14 sm:grid sm:place-items-center bg-white rounded-md px-5 py-10 shadow-lg">
+              <div>
                 <div>
-                  <div>
-                    <div className="text-left m-auto">
-                      <h1 className="font-extrabold text-4xl leading-normal sm:leading-relaxed">
-                        Combining data driven development
-                        <br /> with elegant, modern <span className="text-indigo-600">style</span>
-                      </h1>
-                      <span id="welcome">Welcome To My Web Development Portfolio</span>
-                    </div>
+                  <div className="text-left m-auto">
+                    <span>Journey Cruz - Web Developer</span>
+                    <h1 className="font-extrabold text-4xl leading-normal pt-4 pb-5 sm:leading-relaxed">
+                      Combining Data Driven Development
+                      <br /> With Elegant, Modern <span className="text-indigo-600">Style</span>
+                    </h1>
                   </div>
+                  <button className="mt-6 px-8 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                    Browse Projects
+                  </button>
+                  <button className="mt-6 sm:ml-0 md:ml-6 px-8 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-500 to-blue-600 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-600 transition duration-200 ease-in-out">
+                    Download Resume
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-        {/* End Single Slide */}
+        </div>
       </div>
     );
   }

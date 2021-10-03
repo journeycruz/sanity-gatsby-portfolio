@@ -1,0 +1,137 @@
+/* Tab Style  */
+
+ul {
+    &.tab-style--1 {
+        // @extend %liststyle;
+        display: contents;
+        margin: 0 -20px;
+        flex-wrap: wrap;
+        // @media #{$lg-layout} {
+        //     margin: 0 -10px;
+        // }
+        li {
+            position: relative;
+            margin-right: 5%;
+            margin-left: 5%;
+            display: inline-block;
+            padding-bottom: 4px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+            // @media #{$lg-layout} {
+            //     margin: 0 10px;
+            //     font-size: 17px;
+            // }
+            // @media #{$sm-layout} {
+            //     margin-bottom: 10px;
+            // }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 30px;
+                background: rgba(0, 0, 0, 0.2);
+                transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+                height: 2px;
+                bottom: 0;
+            }
+            &.react-tabs__tab--selected {
+                color: black;
+                &::before {
+                    width: 100%;
+                    background: currentColor;
+                }
+            }
+        }
+    }
+}
+
+.single-tab-content {
+    padding-top: 20px;
+    p {
+        font-weight: 300;
+        color: #FEFDFE;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.single-tab-content {
+    ul {
+        &.list-style--1 {
+            li {
+                margin-bottom: 10px;
+            }
+        }
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            color: #1d1d1f;
+            font-size: 16px;
+            line-height: inherit;
+            margin-bottom: 30px;
+            font-weight: 300;
+            a {
+                font-weight: 500;
+                display: block;
+                color: #717173;
+                span {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+// #certificate1 {
+//     @media #{$laptop-device, $sm-layout, $md-layout, $lg-layout} {
+//         width: 60%;
+//         justify-content: center;
+//         padding-top: 20px;
+//     }
+//     @media #{$small-mobile, $smlg-device, $large-mobile} {
+//         width: 90%;
+//         justify-content: center;
+//         padding-top: 20px;
+//     }
+// }
+.space {
+    height: 10px;
+}
+
+.softwareLI {
+    object-fit: cover;
+    height: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.tabContainer {
+    width: 100%;
+}
+
+.softwareLIlarge {
+    object-fit: cover;
+    height: 80px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.softwareLIsmall {
+    object-fit: cover;
+    height: 35px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#cbdLogo {
+    object-fit: cover;
+    max-height: 200px;
+    width: auto;
+    border-radius: 100%;
+}
