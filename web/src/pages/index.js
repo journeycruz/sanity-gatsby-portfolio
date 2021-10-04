@@ -12,6 +12,7 @@ import SEO from "../components/seo";
 import Layout from "../containers/layout";
 import Hero from "../components/Hero";
 import AboutTabs from "../components/Tabs";
+import Services from "../components/Services";
 
 export const query = graphql`
   query IndexPageQuery {
@@ -119,7 +120,6 @@ const IndexPage = props => {
     <Layout>
       <Hero />
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <AboutTabs />
       <Container>
         {/* <h1>{site.title}</h1>
         <h2>{site.subtitle}</h2> */}
@@ -131,6 +131,8 @@ const IndexPage = props => {
           />
         )}
       </Container>
+      <AboutTabs />
+      <Services />
     </Layout>
   );
 };

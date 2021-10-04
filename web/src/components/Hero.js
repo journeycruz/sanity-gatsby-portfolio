@@ -63,7 +63,7 @@ class Hero extends Component {
         </div>
         <div className="bg-gradient-to-b from-white to-gray-100 grid place-items-start m-auto h-full z-50">
           <div className="m-auto z-50 mx-7">
-            <div className="container w-full m-auto lg:ml-14 sm:grid sm:place-items-center bg-white rounded-md px-5 py-10 shadow-lg">
+            <div className="container w-full m-auto lg:ml-14 xl:ml-48 2xl:ml-72 sm:grid sm:place-items-center bg-white rounded-md px-5 py-10 shadow-lg">
               <div>
                 <div>
                   <div className="text-left m-auto">

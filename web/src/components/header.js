@@ -8,9 +8,10 @@ import { ChevronDownIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 // import * as styles from "./header.module.css";
 
 const navigation = [
-  { name: "About", href: "/", current: false },
-  { name: "Services", href: "/archive/", current: false },
-  { name: "Contact", href: "/archive/", current: false }
+  { name: "About", href: "#about", current: false },
+  { name: "Services", href: "#services", current: false },
+  { name: "Contact", href: "/archive/", current: false },
+  { name: "Projects", href: "/archive/", current: false }
 ];
 
 function classNames(...classes) {
@@ -68,70 +69,6 @@ const Header = () => (
                       {item.name}
                     </Link>
                   ))}
-                  {/* Profile dropdown */}
-                  <Menu as="div" className="ml-3 relative z-50  my-auto">
-                    <div>
-                      <Menu.Button className="bg-gray-900 flex text-sm rounded-md text-gray-300 hover:bg-gray-700 hover:text-white">
-                        <span className="sr-only">Open user menu</span>
-                        <span className='text-gray-300 font-medium'>Projects</span>
-                        <ChevronDownIcon
-                          className="text-gray-400 my-auto mx-1 h-3 w-3 hover:text-white"
-                          aria-hidden="true"
-                        />
-                      </Menu.Button>
-                    </div>
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        <Menu.Item>
-                          {({ active }) => (
-                            <Link
-                              to="#"
-                              className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
-                              )}
-                            >
-                              LinkedIn
-                            </Link>
-                          )}
-                        </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <Link
-                              to="#"
-                              className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
-                              )}
-                            >
-                              GitHub
-                            </Link>
-                          )}
-                        </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <Link
-                              to="#"
-                              className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
-                              )}
-                            >
-                              Dribbble
-                            </Link>
-                          )}
-                        </Menu.Item>
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
                 </div>
               </div>
             </div>
@@ -243,7 +180,7 @@ const Header = () => (
               {/* Profile dropdown */}
               <Menu as="div" className="ml-3 relative z-50">
                 <div>
-                  <Menu.Button className="bg-gray-800 flex w-full py-1 rounded-md hover:bg-gray-700">
+                  <Menu.Button className="bg-gray-800 flex w-full h-100 py-1 rounded-md hover:bg-gray-700">
                     <span className="sr-only">Open user menu</span>
                     <span className="text-gray-300 font-medium space-x-4 block text-base">
                       Projects

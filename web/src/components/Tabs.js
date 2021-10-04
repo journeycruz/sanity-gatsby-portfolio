@@ -6,10 +6,9 @@ class AboutTabs extends Component {
   render() {
     let tab1 = "Experience",
       tab2 = "Work History",
-      tab3 = "Education & Certification";
-    const { tabStyle } = this.props;
+      tab3 = "Education";
     return (
-      <div className="pt-14 bg-gray-100">
+      <div className="pt-14 bg-gray-100" id='about'>
         <div className="text-center">
           <div className="text-4xl font-semibold mb-16">About:</div>
           <div className="text-gray-500 mb-20 px-16">
@@ -23,7 +22,7 @@ class AboutTabs extends Component {
           </div>
         </div>
         <div className="tabs-area">
-          <div className="container">
+          <div className="container m-auto">
             <div className="">
               <div className="text-center">
                 <Tabs>

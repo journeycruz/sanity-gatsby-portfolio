@@ -8,8 +8,8 @@ function ProjectPreviewGrid(props) {
   return (
     <div className="mt-8 mr-0 mb-16">
       {props.title && (
-        <h2 className="text-sm leading-tight font-semibold uppercase tracking-tighter m-7">
-          {props.title}
+        <h2 className="text-4xl font-semibold m-7 text-center">
+          {props.title}&#58;
         </h2>
       )}
       <ul className="m-0 p-0 list-none grid md:grid-cols-3 sm:grid-cols-2 gap-8">
@@ -24,7 +24,7 @@ function ProjectPreviewGrid(props) {
           ))}
       </ul>
       {props.browseMoreHref && (
-        <div className="text-sm text-right leading-tight tracking-tighter mt-10 font-semibold uppercase hover:text-indigo-600">
+        <div className="text-lg animate-bounce mt-14 font-semibold text-center hover:text-indigo-600">
           <Link to={props.browseMoreHref}>Browse All Projects</Link>
         </div>
       )}
