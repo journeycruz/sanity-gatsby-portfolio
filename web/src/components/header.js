@@ -8,9 +8,9 @@ import { ChevronDownIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 // import * as styles from "./header.module.css";
 
 const navigation = [
-  { name: "About", href: "#about", current: false },
-  { name: "Services", href: "#services", current: false },
-  { name: "Contact", href: "/archive/", current: false },
+  { name: "About", href: "/#about", current: false },
+  { name: "Services", href: "/#services", current: false },
+  { name: "Contact", href: "/#contact", current: false },
   { name: "Projects", href: "/archive/", current: false }
 ];
 

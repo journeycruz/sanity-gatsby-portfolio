@@ -62,7 +62,7 @@ class Services extends Component {
             </div>
           </div>
         </div>
-        <div className='grid lg:grid-cols-3 gap-3 m-auto md:grid-cols-2 sm:grid-cols-1 lg:mx-36 md:mx-7 sm:mx-auto'>
+        <div className='grid lg:grid-cols-3 gap-3 m-auto md:grid-cols-2 sm:grid-cols-1 lg:mx-36 md:mx-7 sm:mx-7 mb-20'>
           {ServiceContent.map((val, i) => (
             <div className='rounded-2xl border-black' key={i}>
               <span>

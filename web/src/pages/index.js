@@ -13,6 +13,7 @@ import Layout from "../containers/layout";
 import Hero from "../components/Hero";
 import AboutTabs from "../components/Tabs";
 import Services from "../components/Services";
+import ContactForm from "../components/ContactForm";
 
 export const query = graphql`
   query IndexPageQuery {
@@ -133,6 +134,7 @@ const IndexPage = props => {
       </Container>
       <AboutTabs />
       <Services />
+      <ContactForm />
     </Layout>
   );
 };
