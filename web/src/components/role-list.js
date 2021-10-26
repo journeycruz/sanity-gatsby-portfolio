@@ -39,9 +39,9 @@ function RoleList({ items, title }) {
                       case idx === 0:
                         return <span key={role}>{ucfirst(role)}</span>;
                       case idx === item.roles.length - 1:
-                        return <span key={role}> & {role}</span>;
+                        return <span key={role}> & {ucfirst(role)}</span>;
                       default:
-                        return <span key={role}>, {role}</span>;
+                        return <span key={role}>, {ucfirst(role)}</span>;
                     }
                   })}
                 </div>

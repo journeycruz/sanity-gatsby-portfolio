@@ -10,11 +10,21 @@ import RoleList from "./role-list";
 import * as styles from "./project.module.css";
 
 function Project(props) {
-  const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props;
+  const {
+    _rawBody,
+    title,
+    categories,
+    mainImage,
+    members,
+    publishedAt,
+    relatedProjects,
+    github,
+    website
+  } = props;
   return (
     <article className={styles.root}>
       {props.mainImage && mainImage.asset && (
-        <div className={styles.mainImage}>
+        <div className="max-w-5xl mx-auto pt-20">
           <img
             src={imageUrlFor(buildImageObj(mainImage))
               .width(1200)
@@ -36,9 +46,12 @@ function Project(props) {
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? distanceInWords(new Date(publishedAt), new Date())
-                  : format(new Date(publishedAt), "MMMM Do YYYY")}
+                  : format(new Date(publishedAt), "MMMM DD, YYYY")}
               </div>
             )}
+            <Link to={github} target="_blank" className='hover:text-blue-500'>GitHub Repo</Link>
+            <div className="space"></div>
+            <Link to={website} target="_blank" className='hover:text-blue-500'>View Deployed App</Link>
             {members && members.length > 0 && <RoleList items={members} title="Project members" />}
             {categories && categories.length > 0 && (
               <div className={styles.categories}>

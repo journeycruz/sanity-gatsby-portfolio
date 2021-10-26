@@ -11,6 +11,16 @@ export default {
       type: 'string'
     },
     {
+      name: 'github',
+      title: 'GitHub',
+      type: 'string'
+    },
+    {
+      name: 'website',
+      title: 'Link',
+      type: 'string'
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
