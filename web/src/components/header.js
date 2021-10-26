@@ -19,7 +19,7 @@ function classNames(...classes) {
 }
 
 const Header = () => (
-  <Disclosure as="nav" className="bg-gray-900">
+  <Disclosure as="nav" className="bg-black fixed w-screen z-50">
     {({ open }) => (
       <>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -60,7 +60,7 @@ const Header = () => (
                       to={item.href}
                       className={classNames(
                         item.current
-                          ? "bg-gray-900 text-white"
+                          ? "bg-black text-white"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "px-3 py-2 rounded-md text-sm font-medium"
                       )}
@@ -75,7 +75,7 @@ const Header = () => (
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                 type="button"
-                className="bg-gray-900 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-black p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               >
                 <span className="sr-only">View notifications</span>
               </button>
@@ -83,7 +83,7 @@ const Header = () => (
               {/* Profile dropdown */}
               <Menu as="div" className="ml-3 relative z-50">
                 <div>
-                  <Menu.Button className="bg-gray-900 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                  <Menu.Button className="bg-black flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">Open user menu</span>
                     <img
                       className="h-8 w-8 rounded-full"
@@ -132,19 +132,6 @@ const Header = () => (
                         </Link>
                       )}
                     </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <Link
-                          to="#"
-                          className={classNames(
-                            active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
-                          )}
-                        >
-                          Dribbble
-                        </Link>
-                      )}
-                    </Menu.Item>
                   </Menu.Items>
                 </Transition>
               </Menu>
@@ -168,7 +155,7 @@ const Header = () => (
                   to={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
+                      ? "bg-black text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
@@ -177,72 +164,6 @@ const Header = () => (
                   {item.name}
                 </Link>
               ))}
-              {/* Profile dropdown */}
-              <Menu as="div" className="ml-3 relative z-50">
-                <div>
-                  <Menu.Button className="bg-gray-800 flex w-full h-100 py-1 rounded-md hover:bg-gray-700">
-                    <span className="sr-only">Open user menu</span>
-                    <span className="text-gray-300 font-medium space-x-4 block text-base">
-                      Projects
-                    </span>
-                    <ChevronDownIcon
-                      className="text-gray-400 my-auto mx-1 h-3 w-3 hover:text-white"
-                      aria-hidden="true"
-                    />
-                  </Menu.Button>
-                </div>
-                <Transition
-                  as={Fragment}
-                  enter="transition ease-out duration-100"
-                  enterFrom="transform opacity-0 scale-95"
-                  enterTo="transform opacity-100 scale-100"
-                  leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
-                >
-                  <Menu.Items className="origin-top-left absolute left-0 mt-2 w-full rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <Link
-                          to="#"
-                          className={classNames(
-                            active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
-                          )}
-                        >
-                          JavaScript
-                        </Link>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <Link
-                          to="#"
-                          className={classNames(
-                            active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
-                          )}
-                        >
-                          React
-                        </Link>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <Link
-                          to="#"
-                          className={classNames(
-                            active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm text-gray-700"
-                          )}
-                        >
-                          Next.js
-                        </Link>
-                      )}
-                    </Menu.Item>
-                  </Menu.Items>
-                </Transition>
-              </Menu>
             </div>
           </Disclosure.Panel>
         </Transition>

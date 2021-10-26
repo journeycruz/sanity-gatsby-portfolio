@@ -8,7 +8,18 @@ class AboutTabs extends Component {
       tab2 = "Work History",
       tab3 = "Education";
     return (
-      <div className="pt-14 bg-gray-100" id='about'>
+      <div className="bg-gray-100" id="about">
+        <svg
+          className="transform sm:-translate-y-12 lg:-translate-y-14"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 100"
+        >
+          <path
+            fill="#f3f4f6"
+            fill-opacity="1"
+            d="M0,64L120,53.3C240,43,480,21,720,21.3C960,21,1200,43,1320,53.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+          ></path>
+        </svg>
         <div className="text-center">
           <div className="text-4xl font-semibold mb-16">About:</div>
           <div className="text-gray-500 mb-20 px-16">
@@ -23,25 +34,25 @@ class AboutTabs extends Component {
         </div>
         <div className="tabs-area">
           <div className="container m-auto">
-            <div className="">
+            <div className="px-7">
               <div className="text-center">
                 <Tabs>
                   <TabList className="tab-style--1">
-                    <Tab>{tab1}</Tab>
-                    <Tab>{tab2}</Tab>
-                    <Tab>{tab3}</Tab>
+                    <Tab className="pt-4">{tab1}</Tab>
+                    <Tab className="pt-4">{tab2}</Tab>
+                    <Tab className="pt-4">{tab3}</Tab>
                   </TabList>
                   <div className="space"></div>
                   <TabPanel>
-                    <div className="tabContainer">
-                      <div className="single-tab-content pb-20">
+                    <div className="tabContainer px-7">
+                      <div className="single-tab-content mx-7">
                         <ul>
                           <li className="text-center">
-                            Experience working with the following technologies and software:
+                            Proficient in the following technologies and software:
                           </li>
                         </ul>
                         <div>
-                          <ul className="grid grid-cols-2 justify-items-center mt-10">
+                          <ul className="grid md:grid-cols-2 sm:grid-cols-1 justify-items-center mt-10">
                             <li>
                               <a
                                 href="https://www.javascript.com/"
@@ -50,7 +61,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  src="../static/html5-logo-31816.png"
                                   alt="HTML, CSS, Javascript"
                                 />
                               </a>
@@ -63,8 +74,8 @@ class AboutTabs extends Component {
                                 target="_blank"
                               >
                                 <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  className="h-10"
+                                  src="../static/jquery-1-logo-png-transparent.png"
                                   alt="jQuery"
                                 />
                               </a>
@@ -75,11 +86,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                  alt="Git"
-                                />
+                                <img className="h-12" src="../static/gitlogoorange.png" alt="Git" />
                               </a>
                             </li>
                             <li>
@@ -89,8 +96,8 @@ class AboutTabs extends Component {
                                 target="_blank"
                               >
                                 <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  className="h-16"
+                                  src="../static/bootstraplogolong.png"
                                   alt="Bootstrap"
                                 />
                               </a>
@@ -103,7 +110,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  src="../static/express-logo.png"
                                   alt="Express"
                                 />
                               </a>
@@ -116,7 +123,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  src="../static/rapidAPIlogo.png"
                                   alt="RapidAPI"
                                 />
                               </a>
@@ -129,7 +136,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  src="../static/postman-logo.png"
                                   alt="Postman"
                                 />
                               </a>
@@ -141,8 +148,8 @@ class AboutTabs extends Component {
                                 target="_blank"
                               >
                                 <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  className="h-8 my-auto"
+                                  src="../static/json-5-logo-png-transparent.png"
                                   alt="JSON"
                                 />
                               </a>
@@ -153,11 +160,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                  alt="MySQL"
-                                />
+                                <img className="h-16" src="../static/mysql-logo.png" alt="MySQL" />
                               </a>
                             </li>
                             <li>
@@ -168,7 +171,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  src="../static/mongodblogo.png"
                                   alt="MongoDB"
                                 />
                               </a>
@@ -179,11 +182,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                  alt="React"
-                                />
+                                <img className="h-16" src="../static/react-logo.png" alt="React" />
                               </a>
                             </li>
                             <li>
@@ -192,11 +191,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                  alt="Node"
-                                />
+                                <img className="h-14" src="../static/nodejs-logo.png" alt="Node" />
                               </a>
                             </li>
                             <li>
@@ -206,8 +201,8 @@ class AboutTabs extends Component {
                                 target="_blank"
                               >
                                 <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  className="h-16"
+                                  src="../static/heroku-logotype-horizontal-purple.png"
                                   alt="Heroku"
                                 />
                               </a>
@@ -219,8 +214,8 @@ class AboutTabs extends Component {
                                 target="_blank"
                               >
                                 <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  className="h-14"
+                                  src="../static/aws-logo.png"
                                   alt="Amazon Web Services"
                                 />
                               </a>
@@ -233,7 +228,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  src="../static/mongoose-logo.png"
                                   alt="Mongoose"
                                 />
                               </a>
@@ -245,8 +240,8 @@ class AboutTabs extends Component {
                                 target="_blank"
                               >
                                 <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  className="h-16"
+                                  src="../static/handlebars-js.png"
                                   alt="Handlebars"
                                 />
                               </a>
@@ -257,11 +252,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img
-                                  className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                  alt="NPM"
-                                />
+                                <img className="h-10" src="../static/npm-logo.png" alt="NPM" />
                               </a>
                             </li>
                             <li>
@@ -272,7 +263,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                  src="../static/jest-logo-png-transparent.png"
                                   alt="Jest"
                                 />
                               </a>
@@ -293,7 +284,7 @@ class AboutTabs extends Component {
                             target="_blank"
                           >
                             <img
-                              src="/assets/images/cbd_logo.jpg"
+                              src="../static/cbd_logo.jpg"
                               alt="Cyan Bird Designs"
                               id="cbdLogo"
                             />
@@ -326,8 +317,8 @@ class AboutTabs extends Component {
                           Coding Bootcamp - University of Texas At San Antonio - September, 2020
                         </li>
                         <img
-                          id="certificate1"
-                          src="/assets/images/coding_certificate.jpg"
+                          className='lg:w-1/2 mx-auto'
+                          src="../static/coding_certificate.jpg"
                           alt="coding_certificate"
                         />
                       </ul>

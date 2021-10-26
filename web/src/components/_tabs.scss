@@ -50,7 +50,7 @@ ul {
     padding-top: 20px;
     p {
         font-weight: 300;
-        color: #FEFDFE;
+        color: #fefdfe;
         font-size: 18px;
         line-height: 30px;
     }
@@ -86,11 +86,11 @@ ul {
 
 // #certificate1 {
 //     @media #{$laptop-device, $sm-layout, $md-layout, $lg-layout} {
-//         width: 60%;
+//         width: 40%;
 //         justify-content: center;
 //         padding-top: 20px;
 //     }
-//     @media #{$small-mobile, $smlg-device, $large-mobile} {
+//     @media #{$small-layout, $smlg-device, $large-mobile} {
 //         width: 90%;
 //         justify-content: center;
 //         padding-top: 20px;
@@ -134,4 +134,5 @@ ul {
     max-height: 200px;
     width: auto;
     border-radius: 100%;
+    margin: auto;
 }

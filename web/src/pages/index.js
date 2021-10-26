@@ -121,6 +121,8 @@ const IndexPage = props => {
     <Layout>
       <Hero />
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
+      <AboutTabs />
+      <Services />
       <Container>
         {/* <h1>{site.title}</h1>
         <h2>{site.subtitle}</h2> */}
@@ -132,8 +134,6 @@ const IndexPage = props => {
           />
         )}
       </Container>
-      <AboutTabs />
-      <Services />
       <ContactForm />
     </Layout>
   );

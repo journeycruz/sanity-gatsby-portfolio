@@ -7,7 +7,8 @@ import {
   FiCheckSquare,
   FiDollarSign,
 } from "react-icons/fi";
-import './_service.scss';
+import "./_service.scss";
+
 
 const ServiceList = [
   {
@@ -53,20 +54,20 @@ class Services extends Component {
 
     return (
       <React.Fragment>
-        <div className="text-center w-full" id='services'>
-          <div>
-            <div>
-              <div className="text-4xl font-semibold mb-20">
-                <h2>Services:</h2>
+        <div className="text-center pt-20" id="services">
+          <div className="">
+            <div className="">
+              <div className="section-title">
+                <h2 className='text-4xl font-semibold mb-20'>Services:</h2>
               </div>
             </div>
           </div>
         </div>
-        <div className='grid lg:grid-cols-3 gap-3 m-auto md:grid-cols-2 sm:grid-cols-1 lg:mx-36 md:mx-7 sm:mx-7 mb-20'>
+        <div className="grid lg:grid-cols-3 gap-6 md:grid-cols-2 sm:grid-cols-1 mb-20 mx-auto max-w-6xl sm:px-7">
           {ServiceContent.map((val, i) => (
-            <div className='rounded-2xl border-black' key={i}>
+            <div className='sm:bg-white hover:bg-gray-100 rounded-xl' key={i}>
               <span>
-                <div className="service service__style--2">
+                <div className="service service__style--2 h-72">
                   <div className="icon">{val.icon}</div>
                   <div className="content">
                     <h3 className="title">{val.title}</h3>

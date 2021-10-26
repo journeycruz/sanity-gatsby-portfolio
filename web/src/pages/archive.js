@@ -12,7 +12,7 @@ import { responsiveTitle1 } from "../components/typography.module.css";
 export const query = graphql`
   query ArchivePageQuery {
     projects: allSanitySampleProject(
-      limit: 12
+      limit: 100
       sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
     ) {
@@ -64,6 +64,7 @@ export const query = graphql`
     }
   }
 `;
+
 
 const ArchivePage = props => {
   const { data, errors } = props;
