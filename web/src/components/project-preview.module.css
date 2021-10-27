@@ -8,6 +8,11 @@
     composes: responsiveTitle1 from './typography.module.css';
 }
 
+.info {
+    position: relative;
+    bottom: 0;
+}
+
 .leadMediaThumb {
     position: relative;
     padding-bottom: 66.666%;

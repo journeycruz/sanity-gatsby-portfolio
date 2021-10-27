@@ -82,13 +82,10 @@ class Hero extends Component {
                     </h4>
                     <br />
                     <Link to="/archive/">
-                      <button className="mt-6 px-8 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out mx-7">
-                        Browse Projects
+                      <button className="mt-6 px-8 py-4 font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out mx-auto">
+                        View Work
                       </button>
                     </Link>
-                    <button className="mt-6 mx-7 px-5 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-500 to-blue-600 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-600 transition duration-200 ease-in-out">
-                      Download Resume
-                    </button>
                   </div>
                 </div>
               </div>

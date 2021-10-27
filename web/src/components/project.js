@@ -1,8 +1,7 @@
 import { format, distanceInWords, differenceInDays } from "date-fns";
 import React from "react";
 import { Link } from "gatsby";
-import { buildImageObj } from "../lib/helpers";
-import { imageUrlFor } from "../lib/image-url";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import BlockContent from "./block-content";
 import Container from "./container";
 import RoleList from "./role-list";
@@ -22,7 +21,7 @@ function Project(props) {
     website
   } = props;
   return (
-    <article className='pt-16'>
+    <article className="pt-16">
       {/* {props.mainImage && mainImage.asset && (
         <div className="grid max-w-3xl mx-auto pt-16">
           <img
@@ -49,12 +48,24 @@ function Project(props) {
                   : format(new Date(publishedAt), "MMMM DD, YYYY")}
               </div>
             )}
-            <Link to={github} target="_blank" className="hover:text-blue-500">
-              GitHub Repo
+            <h3>Links</h3>
+            <div className="space"></div>
+            <Link to={github} target="_blank" className="hover:text-teal">
+              <button className="bg-black text-white px-auto py-4 mx-auto rounded-lg w-full">
+                <span className="mr-2 inline-flex transform translate-y-0.5">
+                  <AiFillGithub />
+                </span>
+                GitHub Repo
+              </button>
             </Link>
             <div className="space"></div>
-            <Link to={website} target="_blank" className="hover:text-blue-500">
-              View Deployed App
+            <Link to={website} target="_blank" className="hover:text-teal">
+              <button className="bg-purple-500 text-white px-auto py-4 mx-auto rounded-lg w-full">
+                <span className="mr-2 inline-flex transform translate-y-0.5">
+                  <AiOutlineLink />
+                </span>
+                Visit Site
+              </button>
             </Link>
             {members && members.length > 0 && <RoleList items={members} title="Project members" />}
             {categories && categories.length > 0 && (

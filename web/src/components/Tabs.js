@@ -21,7 +21,7 @@ class AboutTabs extends Component {
           ></path>
         </svg>
         <div className="text-center">
-          <div className="text-4xl font-semibold mb-16 mt-8">About:</div>
+          <div className="text-4xl font-semibold mb-16">About:</div>
           <div className="text-gray-500 mb-20 px-16">
             Journey is an innovative web developer with a keen problem solving talent. He is a
             creative Full-Stack Developer adept at building responsive websites and a has a natural

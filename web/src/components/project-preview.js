@@ -29,7 +29,7 @@ function ProjectPreview(props) {
           <BlockText blocks={props._rawExcerpt} />
         </div>
       )}
-      <div>
+      <div className={styles.info}>
         <div className="h-px bg-gray-200 mx-1 mt-10 mb-3"></div>
         <div className="flex justify-between">
           <ul className="flex ml-3">
@@ -53,7 +53,7 @@ function ProjectPreview(props) {
               </li>
             ))}
           </ul>
-          <div className="text-gray-500 text-sm my-auto">
+          <div className="text-gray-500 text-sm my-auto text-right">
             {differenceInDays(new Date(props.publishedAt), new Date()) > 3
               ? distanceInWords(new Date(props.publishedAt), new Date())
               : format(new Date(props.publishedAt), "MMMM YYYY")}
