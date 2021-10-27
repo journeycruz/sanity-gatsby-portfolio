@@ -284,7 +284,7 @@ class AboutTabs extends Component {
                             target="_blank"
                           >
                             <img
-                              src="../static/cbd_logo.jpg"
+                              src="https://i.ibb.co/wg3nGmV/cbd-logo.jpg"
                               alt="Cyan Bird Designs"
                               id="cbdLogo"
                             />
@@ -318,7 +318,7 @@ class AboutTabs extends Component {
                         </li>
                         <img
                           className='lg:w-1/2 mx-auto'
-                          src="../static/coding_certificate.jpg"
+                          src="https://i.ibb.co/fk9PrtH/coding-certificate.jpg"
                           alt="coding_certificate"
                         />
                       </ul>
