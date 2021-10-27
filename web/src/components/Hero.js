@@ -68,11 +68,19 @@ class Hero extends Component {
               <div>
                 <div>
                   <div className="text-center m-auto">
-                    <span>Journey Cruz - Web Developer</span>
-                    <h1 className="font-extrabold text-4xl leading-normal pt-4 pb-5 sm:leading-relaxed">
-                      Developing Easy-To-Use
-                      <span className="text-indigo-600"> Websites & Applications</span>
+                    <h1 className="font-semibold text-2xl leading-tight pt-4 pb-5 sm:leading-normal">
+                      Hi, I'm Journey 👋
                     </h1>
+                    <h4 className="font-normal text-xl leading-tight pt-4 pb-5 sm:leading-normal">
+                      I help businesses, start-ups, and agencies build exceptional user experiences.
+                    </h4>
+                    <h4>
+                      Have a question?{" "}
+                      <a href="/#contact">
+                        <span className="underline">Contact me.</span>
+                      </a>
+                    </h4>
+                    <br />
                     <Link to="/archive/">
                       <button className="mt-6 px-8 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out mx-7">
                         Browse Projects
