@@ -22,9 +22,9 @@ function Project(props) {
     website
   } = props;
   return (
-    <article className={styles.root}>
-      {props.mainImage && mainImage.asset && (
-        <div className="max-w-5xl mx-auto pt-20">
+    <article className='pt-16'>
+      {/* {props.mainImage && mainImage.asset && (
+        <div className="grid max-w-3xl mx-auto pt-16">
           <img
             src={imageUrlFor(buildImageObj(mainImage))
               .width(1200)
@@ -34,7 +34,7 @@ function Project(props) {
             alt={mainImage.alt}
           />
         </div>
-      )}
+      )} */}
       <Container>
         <div className={styles.grid}>
           <div className={styles.mainContent}>
@@ -49,9 +49,13 @@ function Project(props) {
                   : format(new Date(publishedAt), "MMMM DD, YYYY")}
               </div>
             )}
-            <Link to={github} target="_blank" className='hover:text-blue-500'>GitHub Repo</Link>
+            <Link to={github} target="_blank" className="hover:text-blue-500">
+              GitHub Repo
+            </Link>
             <div className="space"></div>
-            <Link to={website} target="_blank" className='hover:text-blue-500'>View Deployed App</Link>
+            <Link to={website} target="_blank" className="hover:text-blue-500">
+              View Deployed App
+            </Link>
             {members && members.length > 0 && <RoleList items={members} title="Project members" />}
             {categories && categories.length > 0 && (
               <div className={styles.categories}>

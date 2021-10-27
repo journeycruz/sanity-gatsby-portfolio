@@ -8,10 +8,9 @@ import { ChevronDownIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 // import * as styles from "./header.module.css";
 
 const navigation = [
-  { name: "About", href: "/#about", current: false },
-  { name: "Services", href: "/#services", current: false },
-  { name: "Contact", href: "/#contact", current: false },
+  { name: "About", href: "/", current: false },
   { name: "Projects", href: "/archive/", current: false },
+  { name: "Blog", href: "https://next-js-blog-with-comments-green-xi.vercel.app/", current: false }
 ];
 
 function classNames(...classes) {
@@ -36,6 +35,20 @@ const Header = () => (
               </Disclosure.Button>
             </div>
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <Link to="/">
+                <img
+                  className="block lg:hidden h-10 w-auto"
+                  src="https://i.ibb.co/vYDNbd8/JC.png"
+                  alt="Workflow"
+                />
+              </Link>
+              <Link to="/">
+                <img
+                  className="hidden lg:block h-10 w-auto"
+                  src="https://i.ibb.co/vYDNbd8/JC.png"
+                  alt="Journey Cruz"
+                />
+              </Link>
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                   {navigation.map(item => (

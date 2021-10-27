@@ -115,7 +115,7 @@ class AboutTabs extends Component {
                                 />
                               </a>
                             </li>
-                            {/* <li>
+                            <li>
                               <a
                                 href="https://rapidapi.com/"
                                 rel="noopener noreferrer"
@@ -127,8 +127,8 @@ class AboutTabs extends Component {
                                   alt="RapidAPI"
                                 />
                               </a>
-                            </li> */}
-                            {/* <li>
+                            </li>
+                            <li>
                               <a
                                 href="https://www.postman.com/"
                                 rel="noopener noreferrer"
@@ -140,8 +140,8 @@ class AboutTabs extends Component {
                                   alt="Postman"
                                 />
                               </a>
-                            </li> */}
-                            {/* <li>
+                            </li>
+                            <li>
                               <a
                                 href="https://json5.org/"
                                 rel="noopener noreferrer"
@@ -153,7 +153,7 @@ class AboutTabs extends Component {
                                   alt="JSON"
                                 />
                               </a>
-                            </li> */}
+                            </li>
                             <li>
                               <a
                                 href="https://www.mysql.com/"
@@ -207,7 +207,7 @@ class AboutTabs extends Component {
                                 />
                               </a>
                             </li>
-                            {/* <li>
+                            <li>
                               <a
                                 href="https://aws.amazon.com/free/?trk=ps_a131L0000085EJuQAM&trkCampaign=acq_paid_search_brand&sc_channel=ps&sc_campaign=acquisition_US&sc_publisher=google&sc_category=core-main&sc_country=US&sc_geo=NAMER&sc_outcome=acq&sc_detail=amazon%20web%20services&sc_content=Brand_amazon_web_services_e&sc_segment=423740514695&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Core-Main|Core|US|EN|Text&s_kwcid=AL!4422!3!423740514695!e!!g!!amazon%20web%20services&ef_id=EAIaIQobChMIqfii1pP88QIVdm1vBB1BJwqTEAAYASAAEgLAO_D_BwE:G:s&s_kwcid=AL!4422!3!423740514695!e!!g!!amazon%20web%20services&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all"
                                 rel="noopener noreferrer"
@@ -219,8 +219,8 @@ class AboutTabs extends Component {
                                   alt="Amazon Web Services"
                                 />
                               </a>
-                            </li> */}
-                            {/* <li>
+                            </li>
+                            <li>
                               <a
                                 href="https://mongoosejs.com/"
                                 rel="noopener noreferrer"
@@ -232,8 +232,8 @@ class AboutTabs extends Component {
                                   alt="Mongoose"
                                 />
                               </a>
-                            </li> */}
-                            {/* <li>
+                            </li>
+                            <li>
                               <a
                                 href="https://handlebarsjs.com/"
                                 rel="noopener noreferrer"
@@ -245,7 +245,7 @@ class AboutTabs extends Component {
                                   alt="Handlebars"
                                 />
                               </a>
-                            </li> */}
+                            </li>
                             <li>
                               <a
                                 href="https://www.npmjs.com/"
@@ -255,7 +255,7 @@ class AboutTabs extends Component {
                                 <img className="h-10" src="../static/npm-logo.png" alt="NPM" />
                               </a>
                             </li>
-                            {/* <li>
+                            <li>
                               <a
                                 href="https://jestjs.io/"
                                 rel="noopener noreferrer"
@@ -267,7 +267,7 @@ class AboutTabs extends Component {
                                   alt="Jest"
                                 />
                               </a>
-                            </li> */}
+                            </li>
                           </ul>
                         </div>
                       </div>
