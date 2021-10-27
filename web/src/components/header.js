@@ -10,7 +10,7 @@ import { ChevronDownIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 const navigation = [
   { name: "About", href: "/", current: false },
   { name: "Projects", href: "/archive/", current: false },
-  { name: "Blog", href: "https://next-js-blog-with-comments-green-xi.vercel.app/", current: false }
+  { name: "Blog", href:"https://next-js-blog-with-comments-green-xi.vercel.app/", current: false }
 ];
 
 function classNames(...classes) {
