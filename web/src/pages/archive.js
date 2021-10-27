@@ -65,7 +65,6 @@ export const query = graphql`
   }
 `;
 
-
 const ArchivePage = props => {
   const { data, errors } = props;
   if (errors) {
@@ -81,7 +80,9 @@ const ArchivePage = props => {
     <Layout>
       <SEO title="Archive" />
       <Container>
-        <h1 className={responsiveTitle1}>All Projects</h1>
+        <div className="mt-16">
+          <h1 className={responsiveTitle1}>All Projects</h1>
+        </div>
         <div className="h-px bg-gray-200 mb-10"></div>{" "}
         {projectNodes && projectNodes.length > 0 && <ProjectPreviewGrid nodes={projectNodes} />}
       </Container>

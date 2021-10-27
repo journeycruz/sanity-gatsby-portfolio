@@ -64,7 +64,7 @@ class Hero extends Component {
         </div>
         <div className="bg-white grid place-items-center m-auto h-full z-9 px-7">
           <div className="m-auto z-10">
-            <div className="container m-auto grid place-items-center bg-white opacity-90 rounded-md pt-10 pb-20 px-7 shadow-lg mt-11">
+            <div className="container bg-transparent m-auto grid place-items-center rounded-md pt-10 pb-20 px-7 mt-11">
               <div>
                 <div>
                   <div className="text-center m-auto">
@@ -74,11 +74,11 @@ class Hero extends Component {
                       <span className="text-indigo-600"> Websites & Applications</span>
                     </h1>
                     <Link to="/archive/">
-                      <button className="mt-6 px-8 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                      <button className="mt-6 px-8 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out mx-7">
                         Browse Projects
                       </button>
                     </Link>
-                    <button className="mt-6 sm:ml-0 md:ml-6 px-8 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-500 to-blue-600 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-600 transition duration-200 ease-in-out">
+                    <button className="mt-6 mx-7 px-5 py-4 rounded-lg font-normal tracking-wide bg-gradient-to-b from-blue-500 to-blue-600 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-600 transition duration-200 ease-in-out">
                       Download Resume
                     </button>
                   </div>
