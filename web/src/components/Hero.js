@@ -4,6 +4,9 @@ import { Component } from "react";
 import Particles from "react-particles-js";
 import { Link } from "gatsby";
 // import { motion } from 'framer-motion';
+import * as styles from './hero.module.css';
+
+const loopIntervals = [1000, 1000, 1000, 1000, 5000];
 
 class Hero extends Component {
   render() {
@@ -63,34 +66,53 @@ class Hero extends Component {
           />
         </div>
         <div className="bg-white grid place-items-center m-auto h-full z-9 px-7">
-          <div className="m-auto z-10">
-            <div className="container bg-transparent m-auto grid place-items-center rounded-md pt-10 pb-20 px-7 mt-11">
-              <div>
-                <div>
-                  <div className="text-center m-auto">
-                    <h1 className="font-semibold text-2xl leading-tight pt-4 pb-5 sm:leading-normal">
-                      Hi, I'm Journey 👋
-                    </h1>
-                    <h4 className="font-normal text-xl leading-tight pt-4 pb-5 sm:leading-normal">
-                      I help businesses, start-ups, and agencies build exceptional user experiences.
-                    </h4>
-                    <h4>
-                      Have a question?{" "}
-                      <a href="/#contact">
-                        <span className="underline">Contact me.</span>
-                      </a>
-                    </h4>
-                    <br />
-                    <Link to="/archive/">
-                      <button className="mt-6 px-8 py-4 font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out mx-auto">
-                        View Work
-                      </button>
-                    </Link>
-                  </div>
+          <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-10">
+            <div class="sm:text-center lg:text-left">
+              {/* <h1 class="text-4xl tracking-normal font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block xl:inline">Web Development to enrich your</span>
+                <span class="block text-teal xl:inline"> online business</span>
+              </h1> */}
+              <h1 className='text-3xl tracking-normal font-bold text-gray-900 sm:text-4xl md:text-5xl'>
+                Journey Cruz <br />
+                <TextLoop
+                  springConfig={{ stiffness: 180, damping: 8 }}
+                  delay="1000"
+                  interval={loopIntervals}
+                >
+                  <span className='text-teal'>MongoDB&nbsp;</span>
+                  <span className='text-teal'>Express.js&nbsp;</span>
+                  <span className='text-teal'>React.js&nbsp;</span>
+                  <span className='text-teal'>Node.js&nbsp;&nbsp;</span>
+                  <span className='text-teal'>Full-Stack&nbsp;</span>
+                </TextLoop>
+                Developer<br />
+                From San Antonio, TX
+              </h1>
+              <p className={styles.subtitle}>Welcome to my portfolio</p>
+              {/* <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
+                commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+              </p> */}
+              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div class="rounded-md shadow">
+                  <Link
+                    to="/archive/"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal hover:bg-teal-500 focus:bg-teal-900 md:py-4 md:text-lg md:px-10"
+                  >
+                    View Work
+                  </Link>
+                </div>
+                <div class="mt-3 sm:mt-0 sm:ml-3">
+                  <a
+                    href="/#contact"
+                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-900 bg-gray-100 hover:bg-gray-200 hover:text-teal focus:bg-black focus:text-white md:py-4 md:text-lg md:px-10"
+                  >
+                    Contact me
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
+          </main>
         </div>
       </div>
     );

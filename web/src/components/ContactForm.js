@@ -8,6 +8,7 @@ export default function ContactForm() {
     emailjs.sendForm("gmail", "template_8gpom8u", e.target, "user_YR4oY7ZbrSRXqxpG8og64").then(
       result => {
         console.log(result.text);
+        alert('Thank you for your email. I will get back to you soon!');
       },
       error => {
         console.log(error.text);

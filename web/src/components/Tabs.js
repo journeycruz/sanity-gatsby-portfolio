@@ -9,7 +9,7 @@ class AboutTabs extends Component {
       tab3 = "Education";
     return (
       <div className="bg-gray-100" id="about">
-        <svg
+        {/* <svg
           className="transform sm:-translate-y-12 lg:-translate-y-12 xl:-translate-y-20"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 100"
@@ -19,9 +19,9 @@ class AboutTabs extends Component {
             fill-opacity="1"
             d="M0,64L120,53.3C240,43,480,21,720,21.3C960,21,1200,43,1320,53.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
           ></path>
-        </svg>
+        </svg> */}
         <div className="text-center">
-          <div className="text-4xl font-semibold mb-16">About:</div>
+          <div className="text-4xl font-semibold mb-12 mt-20">About:</div>
           <div className="text-gray-500 mb-20 px-16">
             Journey is an innovative web developer with a keen problem solving talent. He is a
             creative Full-Stack Developer adept at building responsive websites and a has a natural
@@ -61,7 +61,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="../static/html5-logo-31816.png"
+                                  src="https://i.ibb.co/T2JVRnt/html5-logo-31816.png"
                                   alt="HTML, CSS, Javascript"
                                 />
                               </a>
@@ -75,7 +75,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-10"
-                                  src="../static/jquery-1-logo-png-transparent.png"
+                                  src="https://i.ibb.co/5rJwLr5/jquery-1-logo-png-transparent.png"
                                   alt="jQuery"
                                 />
                               </a>
@@ -86,7 +86,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img className="h-12" src="../static/gitlogoorange.png" alt="Git" />
+                                <img className="h-12" src="https://i.ibb.co/c84Z2b7/gitlogoorange.png" alt="Git" />
                               </a>
                             </li>
                             <li>
@@ -97,7 +97,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-16"
-                                  src="../static/bootstraplogolong.png"
+                                  src="https://i.ibb.co/WH2gL6y/bootstraplogolong.png"
                                   alt="Bootstrap"
                                 />
                               </a>
@@ -110,7 +110,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="../static/express-logo.png"
+                                  src="https://i.ibb.co/jhBVRjW/express-logo.png"
                                   alt="Express"
                                 />
                               </a>
@@ -123,7 +123,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="../static/rapidAPIlogo.png"
+                                  src="https://i.ibb.co/PM7Pzqj/rapid-APIlogo.png"
                                   alt="RapidAPI"
                                 />
                               </a>
@@ -136,7 +136,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="../static/postman-logo.png"
+                                  src="https://i.ibb.co/Zzn3XT0/postman-logo.png"
                                   alt="Postman"
                                 />
                               </a>
@@ -149,7 +149,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-8 my-auto"
-                                  src="../static/json-5-logo-png-transparent.png"
+                                  src="https://i.ibb.co/dPXsFYY/json-5-logo-png-transparent.png"
                                   alt="JSON"
                                 />
                               </a>
@@ -160,7 +160,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img className="h-16" src="../static/mysql-logo.png" alt="MySQL" />
+                                <img className="h-16" src="https://i.ibb.co/tsMgWnf/mysql-logo.png" alt="MySQL" />
                               </a>
                             </li>
                             <li>
@@ -171,7 +171,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="../static/mongodblogo.png"
+                                  src="https://i.ibb.co/RB3Lkrv/mongodblogo.png"
                                   alt="MongoDB"
                                 />
                               </a>
@@ -182,7 +182,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img className="h-16" src="../static/react-logo.png" alt="React" />
+                                <img className="h-16" src="https://i.ibb.co/dDMH1jw/react-logo.png" alt="React" />
                               </a>
                             </li>
                             <li>
@@ -191,7 +191,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img className="h-14" src="../static/nodejs-logo.png" alt="Node" />
+                                <img className="h-14" src="https://i.ibb.co/Hp88cYL/nodejs-logo.png" alt="Node" />
                               </a>
                             </li>
                             <li>
@@ -202,7 +202,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-16"
-                                  src="../static/heroku-logotype-horizontal-purple.png"
+                                  src="https://i.ibb.co/R24vZYp/heroku-logotype-horizontal-purple.png"
                                   alt="Heroku"
                                 />
                               </a>
@@ -215,7 +215,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-14"
-                                  src="../static/aws-logo.png"
+                                  src="https://i.ibb.co/F8hWWF6/aws-logo.png"
                                   alt="Amazon Web Services"
                                 />
                               </a>
@@ -228,7 +228,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="../static/mongoose-logo.png"
+                                  src="https://i.ibb.co/TmxhXSS/mongoose-logo.png"
                                   alt="Mongoose"
                                 />
                               </a>
@@ -241,7 +241,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-16"
-                                  src="../static/handlebars-js.png"
+                                  src="https://i.ibb.co/41yLFLW/handlebars-js.png"
                                   alt="Handlebars"
                                 />
                               </a>
@@ -252,7 +252,7 @@ class AboutTabs extends Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                <img className="h-10" src="../static/npm-logo.png" alt="NPM" />
+                                <img className="h-10" src="https://i.ibb.co/h9kCbTT/npm-logo.png" alt="NPM" />
                               </a>
                             </li>
                             <li>
@@ -263,7 +263,7 @@ class AboutTabs extends Component {
                               >
                                 <img
                                   className="h-12"
-                                  src="../static/jest-logo-png-transparent.png"
+                                  src="https://i.ibb.co/drhc9p2/jest-logo-png-transparent.png"
                                   alt="Jest"
                                 />
                               </a>
@@ -274,7 +274,7 @@ class AboutTabs extends Component {
                     </div>
                   </TabPanel>
                   <TabPanel>
-                    <div className="single-tab-content">
+                    <div className="single-tab-content mt-7">
                       <div className="col-md-12"></div>
                       <ul>
                         <li>
@@ -311,7 +311,7 @@ class AboutTabs extends Component {
                     </div>
                   </TabPanel>
                   <TabPanel>
-                    <div className="single-tab-content">
+                    <div className="single-tab-content mt-7">
                       <ul>
                         <li>
                           Coding Bootcamp - University of Texas At San Antonio - September, 2020

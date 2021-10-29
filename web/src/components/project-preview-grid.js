@@ -6,9 +6,9 @@ import * as styles from "./project-preview-grid.module.css";
 
 function ProjectPreviewGrid(props) {
   return (
-    <div className="mt-8 mr-0 mb-16">
+    <div className="mt-8 mr-0 mb-20">
       {props.title && (
-        <h2 className="text-4xl font-semibold m-7 text-center">
+        <h2 className="text-4xl mb-20 font-semibold m-7 text-center">
           {props.title}&#58;
         </h2>
       )}
@@ -16,7 +16,7 @@ function ProjectPreviewGrid(props) {
         {props.nodes &&
           props.nodes.map(node => (
             <li
-              className="bg-white shadow-lg hover:shadow-2xl transition ease-in-out duration-700 rounded-md px-6 py-5"
+              className="bg-white shadow-lg transform hover:-translate-y-1 hover:shadow-2xl transition ease-in-out duration-300 rounded-md px-6 py-5"
               key={node.id}
             >
               <ProjectPreview {...node} />

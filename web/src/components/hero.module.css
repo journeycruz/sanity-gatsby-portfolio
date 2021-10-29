@@ -1,0 +1,8 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap);
+.subtitle {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    letter-spacing: 0.25rem;
+    font-weight: 500;
+}
