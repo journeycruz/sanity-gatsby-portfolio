@@ -1,0 +1,15 @@
+{
+    "types": [{
+        "type": "sampleProject",
+        "field": "publishedAt",
+        "titleField": "title"
+    }],
+    "calendar": {
+        "event": {
+            "dateFormat": "MMMM, dd yyyy",
+            "timeFormat": "hh:mm a",
+            "showAuthor": "false"
+        }
+    },
+    "filterWarnings": [{}]
+}
