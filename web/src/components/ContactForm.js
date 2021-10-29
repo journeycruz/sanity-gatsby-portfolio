@@ -73,7 +73,7 @@ export default function ContactForm() {
                 </label>
                 <div className="w-full">
                   <button
-                    className="rounded-md bg-indigo-600 px-4 py-2"
+                    className="rounded-md bg-teal px-4 py-2"
                     type="submit"
                     value="submit"
                     name="submit"
