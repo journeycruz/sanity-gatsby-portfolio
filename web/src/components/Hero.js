@@ -4,7 +4,7 @@ import { Component } from "react";
 import Particles from "react-particles-js";
 import { Link } from "gatsby";
 // import { motion } from 'framer-motion';
-import * as styles from './hero.module.css';
+import * as styles from "./hero.module.css";
 
 const loopIntervals = [1000, 1000, 1000, 1000, 5000];
 
@@ -72,27 +72,24 @@ class Hero extends Component {
                 <span class="block xl:inline">Web Development to enrich your</span>
                 <span class="block text-teal xl:inline"> online business</span>
               </h1> */}
-              <h1 className='text-3xl tracking-normal font-bold text-gray-900 sm:text-4xl md:text-5xl'>
+              <h1 className="text-3xl tracking-normal font-bold text-gray-900 sm:text-4xl md:text-5xl">
                 Journey Cruz <br />
                 <TextLoop
                   springConfig={{ stiffness: 180, damping: 8 }}
                   delay="1000"
                   interval={loopIntervals}
                 >
-                  <span className='text-teal'>MongoDB&nbsp;</span>
-                  <span className='text-teal'>Express.js&nbsp;</span>
-                  <span className='text-teal'>React.js&nbsp;</span>
-                  <span className='text-teal'>Node.js&nbsp;&nbsp;</span>
-                  <span className='text-teal'>Full-Stack&nbsp;</span>
+                  <span className="text-teal">MongoDB&nbsp;</span>
+                  <span className="text-teal">Express.js&nbsp;</span>
+                  <span className="text-teal">React.js&nbsp;</span>
+                  <span className="text-teal">Node.js&nbsp;</span>
+                  <span className="text-teal">Full-Stack&nbsp;</span>
                 </TextLoop>
-                Developer<br />
+                Developer
+                <br />
                 From San Antonio, TX
               </h1>
               <p className={styles.subtitle}>Welcome to my portfolio</p>
-              {/* <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-                commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
-              </p> */}
               <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
                   <Link
