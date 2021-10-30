@@ -2,13 +2,9 @@
 
 ul {
     &.tab-style--1 {
-        // @extend %liststyle;
         display: contents;
         margin: 0 -20px;
         flex-wrap: wrap;
-        // @media #{$lg-layout} {
-        //     margin: 0 -10px;
-        // }
         li {
             position: relative;
             margin-right: 5%;
@@ -19,13 +15,6 @@ ul {
             font-weight: 500;
             cursor: pointer;
             outline: none;
-            // @media #{$lg-layout} {
-            //     margin: 0 10px;
-            //     font-size: 17px;
-            // }
-            // @media #{$sm-layout} {
-            //     margin-bottom: 10px;
-            // }
             &::before {
                 position: absolute;
                 content: "";
@@ -84,18 +73,6 @@ ul {
     }
 }
 
-// #certificate1 {
-//     @media #{$laptop-device, $sm-layout, $md-layout, $lg-layout} {
-//         width: 40%;
-//         justify-content: center;
-//         padding-top: 20px;
-//     }
-//     @media #{$small-layout, $smlg-device, $large-mobile} {
-//         width: 90%;
-//         justify-content: center;
-//         padding-top: 20px;
-//     }
-// }
 .space {
     height: 10px;
 }
@@ -135,4 +112,8 @@ ul {
     width: auto;
     border-radius: 100%;
     margin: auto;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
 }

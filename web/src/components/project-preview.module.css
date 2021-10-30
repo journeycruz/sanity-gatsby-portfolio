@@ -38,6 +38,7 @@
 }
 
 .excerpt {
+    font-family: 'Raleway', sans-serif;
     @nest & p {
         margin: 0.5em 0;
     }

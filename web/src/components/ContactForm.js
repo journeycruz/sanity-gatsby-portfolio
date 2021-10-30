@@ -23,7 +23,7 @@ export default function ContactForm() {
         <div className="">
           <div className="">
             <div className="">
-              <h2 className="pt-20 font-semibold text-4xl">Get in Touch.</h2>
+              <h2 className="pt-20 font-semibold text-4xl pb-3">Get in Touch.</h2>
               <p className="contact text-white">Let's build something together.</p>
               <p className="contact pb-10 text-white"> Use the form below to send me an email.</p>
             </div>
@@ -32,7 +32,7 @@ export default function ContactForm() {
                 <label htmlFor="item01">
                   Name:
                   <input
-                    className="w-full rounded-md p-2 mb-3"
+                    className="w-full rounded-md p-2 mb-3 text-black"
                     type="text"
                     name="name"
                     id="item01"
@@ -43,7 +43,7 @@ export default function ContactForm() {
                 <label htmlFor="item02">
                   Email:
                   <input
-                    className="w-full rounded-md p-2 mb-3"
+                    className="w-full rounded-md p-2 mb-3 text-black"
                     type="text"
                     name="email"
                     id="item02"
@@ -54,7 +54,7 @@ export default function ContactForm() {
                 <label htmlFor="item03">
                   Subject:
                   <input
-                    className="w-full rounded-md p-2 mb-3"
+                    className="w-full rounded-md p-2 mb-3 text-black"
                     type="text"
                     name="subject"
                     id="item03"
@@ -71,9 +71,9 @@ export default function ContactForm() {
                     placeholder="Message*"
                   />
                 </label>
-                <div className="w-full">
+                <div className="text-center">
                   <button
-                    className="rounded-md bg-teal px-4 py-2"
+                    className="rounded-md bg-purple-600 w-1/5 py-2 mt-2"
                     type="submit"
                     value="submit"
                     name="submit"

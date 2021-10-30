@@ -4,6 +4,7 @@
 
 .title {
     composes: responsiveTitle1 from './typography.module.css';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mainImage {
@@ -31,6 +32,7 @@
 }
 
 .mainContent {
+    font-family: 'Raleway', sans-serif;
     @nest & a {
         color: var(--color-accent);
         @media (hover: hover) {

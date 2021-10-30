@@ -85,11 +85,12 @@ class Hero extends Component {
                   <span className="text-teal">Node.js&nbsp;</span>
                   <span className="text-teal">Full-Stack&nbsp;</span>
                 </TextLoop>
+                <br />
                 Developer
                 <br />
                 From San Antonio, TX
               </h1>
-              <p className={styles.subtitle}>Welcome to my portfolio</p>
+              <p className={styles.subtitle}>Web development portfolio</p>
               <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
                   <Link
@@ -104,7 +105,7 @@ class Hero extends Component {
                     href="/#contact"
                     class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-teal-900 bg-gray-100 hover:bg-gray-200 hover:text-teal focus:bg-black focus:text-white md:py-4 md:text-lg md:px-10"
                   >
-                    Contact me
+                    Contact
                   </a>
                 </div>
               </div>
