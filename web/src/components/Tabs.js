@@ -394,7 +394,7 @@ class AboutTabs extends Component {
           href={`Journey_Cruz_Resume_2021.PDF`}
           download
         >
-          Download Journey's Resume
+          Download Resume
         </a>
         </div>
       </div>
