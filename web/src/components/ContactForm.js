@@ -24,8 +24,8 @@ export default function ContactForm() {
           <div className="">
             <div className="">
               <h2 className="pt-20 font-semibold text-4xl pb-3">Get in Touch.</h2>
-              <p className="contact text-white">Let's build something together.</p>
-              <p className="contact pb-10 text-white"> Use the form below to send me an email.</p>
+              <p className="contact text-white">Use the form below</p>
+              <p className="contact pb-10 text-white"> to send an email.</p>
             </div>
             <div className="text-left max-w-4xl m-auto">
               <form onSubmit={sendEmail}>

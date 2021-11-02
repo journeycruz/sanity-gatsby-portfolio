@@ -6,9 +6,12 @@ export default {
     //     templateRepoId: 'sanity-io/sanity-template-gatsby-portfolio'
     //   }
     // },
-    {name: 'structure-menu'},
+    {
+      name: 'structure-menu'
+    },
     {
       name: 'project-info',
+      layout: {width: 'large'},
       options: {
         __experimental_before: [
           {
@@ -47,11 +50,16 @@ export default {
         ]
       }
     },
-    {name: 'project-users', layout: {height: 'auto'}},
+    {
+      name: 'project-users',
+      layout: {
+        height: 'small'
+      }
+    },
     {
       name: 'document-list',
       options: {title: 'Recent projects', order: '_createdAt desc', types: ['sampleProject']},
-      layout: {width: 'medium'}
+      layout: {width: 'full'}
     }
   ]
 }
