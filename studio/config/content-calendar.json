@@ -1,9 +1,15 @@
 {
     "types": [{
-        "type": "sampleProject",
-        "field": "publishedAt",
-        "titleField": "title"
-    }],
+            "type": "sampleProject",
+            "field": "publishedAt",
+            "titleField": "title"
+        },
+        {
+            "type": "blogPosts",
+            "field": "publishedAt",
+            "titleField": "title"
+        }
+    ],
     "calendar": {
         "event": {
             "dateFormat": "MMMM, dd yyyy",
