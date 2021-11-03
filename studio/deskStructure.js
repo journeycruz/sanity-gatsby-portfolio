@@ -18,6 +18,10 @@ export default () =>
         )
         .icon(MdSettings),
       S.listItem()
+        .title('People')
+        .schemaType('person')
+        .child(S.documentTypeList('person').title('People')),
+      S.listItem()
         .title('Projects')
         .schemaType('sampleProject')
         .child(S.documentTypeList('sampleProject').title('Projects')),
@@ -25,10 +29,6 @@ export default () =>
         .title('Blog Posts')
         .schemaType('blogPost')
         .child(S.documentTypeList('blogPost').title('Blog Posts')),
-      S.listItem()
-        .title('People')
-        .schemaType('person')
-        .child(S.documentTypeList('person').title('People')),
       S.listItem()
         .title('Categories')
         .schemaType('category')

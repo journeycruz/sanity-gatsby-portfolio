@@ -28,7 +28,7 @@ class AboutTabs extends Component {
             creative Full-Stack Developer adept at building responsive websites and a has a natural
             eye for design that meets a customer's experience needs. Specializing in collaborating
             with ecommerce customers to gather requirements, produce plans, and improve designs for
-            usability and functionality. Fully proficient in JavaScript, Bootstrap, and React.
+            usability and functionality. Fully proficient in JavaScript, SCSS, and React.
             Journey's technical experience, work ethic, and diligence make him an advantageous
             candidate for any development team.
           </div>
@@ -382,13 +382,6 @@ class AboutTabs extends Component {
             Journey is a data driven designer who uses methodical processes like customer journey
             mapping and experience analytics intelligence to create modern, user-centered designs.
           </p>
-          {/* <button
-            className="bg-red-500 px-5 py-3 rounded-lg shadow-md text-white"
-            href='https://i.ibb.co/fk9PrtH/coding-certificate.jpg'
-            download="https://i.ibb.co/fk9PrtH/coding-certificate.jpg"
-          >
-            Download Journey's Resume
-          </button> */}
           <a
           className="bg-red-500 w-2/5 px-4 py-5 rounded-lg hover:shadow-2xl text-white uppercase tracking-widest transition ease-in-out duration-300 hover:transform hover:-translate-y-5 hover:text-red-500 hover:bg-white hover:border-red-500"
           href={`Journey_Cruz_Resume_21.PDF`}
