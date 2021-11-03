@@ -391,7 +391,7 @@ class AboutTabs extends Component {
           </button> */}
           <a
           className="bg-red-500 w-2/5 px-4 py-5 rounded-lg hover:shadow-2xl text-white uppercase tracking-widest transition ease-in-out duration-300 hover:transform hover:-translate-y-5 hover:text-red-500 hover:bg-white hover:border-red-500"
-          href={`Journey_Cruz_Resume_2021.PDF`}
+          href={`Journey_Cruz_Resume_21.PDF`}
           download
         >
           Download Resume
