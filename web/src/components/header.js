@@ -17,7 +17,7 @@ function classNames(...classes) {
 }
 
 const Header = () => (
-  <Disclosure as="nav" className="bg-black fixed w-screen z-50">
+  <Disclosure as="nav" className="bg-black fixed w-screen z-50 shadow-md">
     {({ open }) => (
       <>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -38,14 +38,14 @@ const Header = () => (
                 <img
                   className="block lg:hidden h-10 w-auto"
                   src="https://i.ibb.co/vYDNbd8/JC.png"
-                  alt="Workflow"
+                  alt="JC"
                 />
               </Link>
               <Link to="/">
                 <img
                   className="hidden lg:block h-10 w-auto"
                   src="https://i.ibb.co/vYDNbd8/JC.png"
-                  alt="Journey Cruz"
+                  alt="JC"
                 />
               </Link>
               <div className="hidden sm:block sm:ml-6">
@@ -83,8 +83,8 @@ const Header = () => (
                     <span className="sr-only">Open user menu</span>
                     <img
                       className="h-8 w-8 rounded-full"
-                      src="https://live.staticflickr.com/65535/51534432635_edb2b3968f_k.jpg"
-                      alt=""
+                      src="https://i.ibb.co/xJDFfS6/journeypfp.png"
+                      alt="Journey"
                     />
                     <ChevronDownIcon
                       className="text-gray-400 my-auto mx-1 h-3 w-3 hover:text-white"

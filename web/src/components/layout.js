@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
-          © {new Date().getFullYear()}, Built with <a href="https://www.sanity.io">Sanity</a> &amp;
+          © 2019 - {new Date().getFullYear()} Journey Cruz | All Rights Reserved <br /> Built with <a href="https://www.sanity.io">Sanity</a> &amp;
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </div>
