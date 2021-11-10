@@ -34,6 +34,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: "website"
               },
               {
+                property: "og:image",
+                content: "https://live.staticflickr.com/65535/51348553918_dbeeae94ea_o.png"
+              },
+              {
                 name: "twitter:card",
                 content: "summary"
               },
